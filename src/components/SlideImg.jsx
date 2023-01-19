@@ -144,51 +144,6 @@ const SlideImg = ({
                 <BsHandThumbsUp />
               </div>
             </div>
-
-            {/* <a className="evaluation" href="/">
-              <BsHandThumbsUp
-                style={{
-                  fontSize: "20px",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  position: "absolute",
-                }}
-              />
-              <div className="evaluation_hover">
-                <div className="evaluation_icon1 evaluation_icons">
-                  <BsHandThumbsDown
-                    style={{
-                      fontSize: "20px",
-                    }}
-                  />
-                </div>
-                <div className="evaluation_icon2 evaluation_icons">
-                  <BsHandThumbsUp
-                    style={{
-                      fontSize: "20px",
-                    }}
-                  />
-                </div>
-                <div className="evaluation_icon3 evaluation_icons">
-                  <BsHandThumbsUp
-                    style={{
-                      fontSize: "20px",
-                    }}
-                  />
-                  <BsHandThumbsUp
-                    style={{
-                      fontSize: "20px",
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-20%, -63%)",
-                      zIndex: "10",
-                    }}
-                  />
-                </div>
-              </div>
-            </a> */}
           </div>
           <div
             className="icon-right2"

@@ -9,6 +9,7 @@ import { BACKEND_URL } from "../utils";
 import { useRef } from "react";
 import { useRecoilState } from "recoil";
 import { rankingState } from "../recoil/ranking";
+import SlideItems2 from "./SlideItems2";
 
 const AllContents = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -103,7 +104,7 @@ const AllContents = () => {
         check={check}
         setCheck={setCheck}
       />
-      <SlideItems
+      <SlideItems2
         openModal={openModal}
         kDramas={kDramas}
         check={check}

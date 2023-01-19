@@ -72,6 +72,39 @@ const SlideItems = ({ openModal, kDramas, check, ranking, setCheck }) => {
     autoplay: false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      // 반응형 옵션
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   // Slick 세팅 끝
 

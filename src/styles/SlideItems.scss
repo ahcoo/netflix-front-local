@@ -410,25 +410,17 @@
   padding: 3px 10px 3px 7px;
 }
 
-.thumbnail-content2
-  > .thumbnail-content__icon2
-  > .icon-left2
-  > .hover_box_run
-  > * {
+.netflix-card__content .hover_box_run > * {
   // margin-right: 2px;
   padding: 7px;
 }
 
-.thumbnail-content2
-  > .thumbnail-content__icon2
-  > .icon-left2
-  > .hover_box_run
-  > *:hover {
+.netflix-card__content .hover_box_run > *:hover {
   border-radius: 50%;
   background: #808080;
 }
 
-.thumbnail-content__icon2 > .icon-left2 > .hover_box_run .good_overlapping {
+.netflix-card__content .hover_box_run .good_overlapping {
   width: 17px;
   height: 17px;
   display: flex;
