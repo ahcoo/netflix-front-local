@@ -1,10 +1,10 @@
-.playlist-title {
-  font-size: 24px;
-  margin-bottom: -50px;
-}
+/* 강사님이 만드신 부분 시작 */
+// .playlist-title {
+//   font-size: 24px;
+//   margin-bottom: -50px;
+// }
 
 .netflix-card {
-  /*   width:340px; */
   color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -21,7 +21,7 @@
   border-radius: 0;
 }
 
-.netflix-card__content {
+.thumbnail-content2  {
   background-color: #181818;
   padding: 16px;
   padding-bottom: 32px;
@@ -30,18 +30,18 @@
   transition: 0.3s;
 }
 
-.slick-slide:hover .netflix-card__content {
+.slick-slide:hover .thumbnail-content2 {
   opacity: 1;
   visibility: visible;
 }
 
-.icon-box {
+.thumbnail-content__icon2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.icon-box > div {
+.thumbnail-content__icon2 > div {
   display: flex;
   gap: 8px;
 }
@@ -118,3 +118,76 @@
 .list-group:hover {
   z-index: 99;
 }
+/* 강사님이 만드신 부분 끝 */
+
+/* 맨 위 틀 시작 */
+
+
+/* 맨 위 틀 끝 */
+
+
+/* 플레이 / 찜 / 좋아요 버튼 시작 */
+.thumbnail-content2 > .thumbnail-content__icon2 > .icon-left2 > .playBtn {
+  border: 2px solid #fff;
+  background: white;
+  color: #343434;
+  padding: 2px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+
+.thumbnail-content2 > .thumbnail-content__icon2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.thumbnail-content2
+  > .thumbnail-content__icon2
+  > .icon-left2
+  > .hover_box_none {
+  display: none;
+}
+
+.thumbnail-content2 .hover_box_run > * {
+  // margin-right: 2px;
+  padding: 7px;
+}
+
+.thumbnail-content2 > .thumbnail-content__icon2 > .icon-left2 > .hover_box_run {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -16%;
+  left: 30%;
+  background: #141414;
+  border-radius: 25px;
+  padding: 3px 10px 3px 7px;
+}
+
+.thumbnail-content2 .hover_box_run > *:hover {
+  border-radius: 50%;
+  background: #808080;
+}
+
+.thumbnail-content2 .hover_box_run .good_overlapping {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  // margin-right:? 2px;
+  padding: 7px 9px 7px 5px;
+}
+
+.thumbnail-content__icon2
+  > .icon-left2
+  > .hover_box_run
+  .good_overlapping
+  > svg:last-child {
+  position: absolute;
+  right: 14%;
+  top: 27%;
+}
+/* 플레이 / 찜 / 따봉 버튼 끝 */
+

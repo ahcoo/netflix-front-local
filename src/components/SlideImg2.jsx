@@ -77,19 +77,8 @@ const SlideImg2 = ({
 
   return (
     <>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
-      <script
-        type="text/javascript"
-        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      ></script>
-
-      <div className="netflix-card">
+      <div className="netflix-card"
+>
         <div className="netflix-card__img-box">
           {/* <img
             src="https://occ-0-993-325.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXu4kW8ZTdoCyxHF7neSmPN8zCRQ335V4qg2AAyI3JifkUubXAEwcsT3rvKTb44agqTFpJ24wRNAlUkx9s8eDYAOACKcJHLdPCM.webp?r=a84"
@@ -99,9 +88,9 @@ const SlideImg2 = ({
             <img src={ele?.contentImg} alt="" />
           </Link>
         </div>
-        <div className="netflix-card__content">
-          <div className="icon-box">
-            <div>
+        <div className="thumbnail-content2">
+          <div className="thumbnail-content__icon2">
+            <div className="icon-left2">
               <BsPlayFill
                 onClick={isActive ? playState : null}
                 className="playBtn"
@@ -141,7 +130,12 @@ const SlideImg2 = ({
                 </div>
               </div>
             </div>
-            <div className="icon more-icon">
+            <div className="icon-right2"
+            style={{cursor: "pointer"}}
+            onClick={() => {
+              openModal(ele ? ele : null);
+              console.log("모달 클릭 : ", ele);
+            }}>
               <svg
                 width="16"
                 height="16"
@@ -161,13 +155,13 @@ const SlideImg2 = ({
           </div>
           <div className="content-info">
             <span>97% 일치</span>
-            <span>15+</span>
-            <span>에피소드 16개</span>
+            <span style={{marginLeft:"10px"}}>15+</span>
+            <span style={{marginLeft:"10px"}}>에피소드 16개</span>
           </div>
-          <div className="content-tag">
-            <span>진심어린</span>
-            <span>로맨틱</span>
-            <span>드라마 장르</span>
+          <div className="content-tag video_genre2 flex">
+          {category.map((data, index) => {
+            return <li key={index}>{data?.categoryType}</li>;
+          })}
           </div>
         </div>
       </div>

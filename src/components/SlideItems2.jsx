@@ -4,6 +4,7 @@ import { BACKEND_URL } from "../utils";
 import Slider from "react-slick";
 import "../styles/SlideImg2.scss";
 import SlideImg2 from "./SlideImg2";
+// import "../styles/SlideItems.scss";
 
 const SlideItems2 = ({ openModal, kDramas, check, ranking, setCheck }) => {
   const [ranks, setRanks] = useState([]);
@@ -63,7 +64,7 @@ const SlideItems2 = ({ openModal, kDramas, check, ranking, setCheck }) => {
     dots: false, //carousel 밑에 지정 콘텐츠로 바로 이동할 수 있는 버튼을 뜻한다. flase 할시 사라진다.
     arrows: true,
     infinite: true, // 콘텐츠 끝까지 갔을 때 다음 콘텐츠를 처음 콘텐츠로 가져와 반복한다.
-    slidesToShow: 6, //한 화면에 보이는 콘텐츠 개수를 말한다.
+    slidesToShow: 7, //한 화면에 보이는 콘텐츠 개수를 말한다.
     slidesToScroll: 6, //한 번에 넘어가는 콘텐츠 수이다. 2로 정하면 2개씩 넘어간다.
     autoplay: false,
     nextArrow: <SampleNextArrow />,
@@ -73,7 +74,7 @@ const SlideItems2 = ({ openModal, kDramas, check, ranking, setCheck }) => {
       {
         breakpoint: 1536,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 6,
         },
       },
       {
@@ -107,9 +108,17 @@ const SlideItems2 = ({ openModal, kDramas, check, ranking, setCheck }) => {
   return (
     <div>
       <div className="list-group list-group-1">
-        <div className="playlist-title">한국 영화</div>
+        <div className="playlist-title">한국 드라마
+          {/* <div className="slide-detail-hover"> */}
+            <div className="slide-detail-text">모두 보기</div>
+                <img
+                  className="slide-arrow-img"
+                  src="https://img.icons8.com/metro/10/54b9c5/forward.png"
+                />
+            </div>
+          {/* </div> */}
 
-        <div className="slide-box">
+        <div className="slide-box slideItems-all-container">
           <div className="slide-list">
             <Slider {...settings}>
               {/* rank 1 */}
@@ -131,9 +140,9 @@ const SlideItems2 = ({ openModal, kDramas, check, ranking, setCheck }) => {
           </div>
         </div>
       </div>
+
       <div className="list-group list-group-2">
         <div className="playlist-title">한국 영화</div>
-
         <div className="slide-box">
           <div className="slide-list">
             <Slider {...settings}>

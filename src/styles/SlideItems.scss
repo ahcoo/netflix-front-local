@@ -7,6 +7,10 @@
 }
 
 /* 타이틀 커스터마이징 */
+.playlist-title {
+  font-size: 24px;
+  margin-bottom: -50px;
+}
 
 .slide-title-text {
   //   position: relative;
@@ -124,12 +128,15 @@
   align-items: center;
   height: 145px;
   width: 100%;
+  border : 1px solid red;
+  
 }
 
 .slideItems-all-container .slick-arrow:hover {
   opacity: 0.7;
   background-color: #141414;
   height: 16vh;
+  
 }
 
 .slideItems-all-container .slick-next:before {
@@ -140,24 +147,27 @@
 .slideItems-all-container .slick-arrow {
   display: flex;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.25s ease-in-out !important;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out !important;
   margin-top: -4.5vh;
   height: 16vh;
   width: 2vw;
+  border : 1px solid red;
 }
 
 .slideItems-all-container .slick-prev {
   left: 0;
   z-index: 10;
+  border : 1px solid red;
 }
 
 .slideItems-all-container .slick-prev,
 .slideItems-all-container .slick-next {
   // 좌측 화살표의 위치값을 넣어줍니다.
   align-items: center;
+  
 }
 
 /* 좌/우측 화살표 끝 */
@@ -472,8 +482,8 @@
 
 .thumbnail-content2 > .video_genre2 {
   margin-top: 8px;
-  font-size: 10px;
-  height: 23px;
+  font-size: 0.8rem;
+  // height: 23px;
   display: flex;
   align-items: center;
 }
@@ -484,7 +494,7 @@
 }
 
 .thumbnail-content2 > .video_genre2 > li {
-  margin-left: 13px;
+  margin-left: 1vw;
   position: relative;
   word-break: keep-all;
 }
